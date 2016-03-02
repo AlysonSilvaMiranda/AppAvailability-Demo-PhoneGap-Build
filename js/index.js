@@ -78,7 +78,7 @@ var app = {
                 scheme, // URI Scheme
                 function() {  // Success callback
                     // Open profile in Twitter app
-                    window.open('fb://page/353751981372711', '_system');
+                    window.open('fb://pages/353751981372711', '_system');
                 },
                 function() {  // Error callback
                     // Open profile in InAppBrowser
