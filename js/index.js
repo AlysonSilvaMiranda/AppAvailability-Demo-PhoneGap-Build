@@ -51,7 +51,7 @@ var app = {
         
         // Don't forget to add the org.apache.cordova.device plugin!
         if(device.platform === 'iOS') {
-            scheme = 'fb://page/';
+            scheme = 'fb://';
         }
         else if(device.platform === 'Android') {
             scheme = 'com.twitter.android';
