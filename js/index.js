@@ -51,7 +51,7 @@ var app = {
         
         // Don't forget to add the org.apache.cordova.device plugin!
         if(device.platform === 'iOS') {
-            scheme = 'twitter://';
+            scheme = 'fb://page/';
         }
         else if(device.platform === 'Android') {
             scheme = 'com.twitter.android';
@@ -68,23 +68,7 @@ var app = {
         );
         
         // AppAvailability Demo Code (Button)
-        var button = document.getElementById('openTwitter');
-        
-        // Event handler
-        button.addEventListener('click', function() {
-            appAvailability.check(
-                scheme, // URI Scheme
-                function() {  // Success callback
-                    // Open profile in Twitter app
-                    window.open('twitter://user?screen_name=unifaesaojoao', '_system');
-                },
-                function() {  // Error callback
-                    // Open profile in InAppBrowser
-                    window.open('https://twitter.com/unifaesaojoao', '_blank');
-                }
-            );
-        }, false);
-        
+       
         // AppAvailability Demo Code (Button)
         var button = document.getElementById('openFacebook');
         
